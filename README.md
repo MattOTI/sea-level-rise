@@ -6,7 +6,7 @@ Analysis of the NASA-SSH Global Mean Sea Level (GMSL) indicator dataset, derived
 
 ## How It's Made
 
-**Tech Used:** Python, VS Code, Jupyter Notebooks
+**Tech Used:** Python, VS Code, SQL, Jupyter Notebooks
 
 Analysis involved initial inspection, data parsing and cleaning of a NASA ASCII time series, conversion of decimal year formatting to datetime objects, and seasonal amplitude analysis. OLS linear regression was applied to establish the long-term rate of rise, with autocorrelation diagnosed via the Durbin-Watson statistic and ACF plot, and corrected using Generalised Least Squares (GLSAR(52)). A quadratic model was fitted to capture observed acceleration, with uncertainty quantified via 52-week block bootstrap. Projections were contextualised against IPCC AR6 likely ranges for 2050 and 2100.
 
