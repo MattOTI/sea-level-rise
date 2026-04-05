@@ -54,7 +54,7 @@ sea-level-rise/
 │   ├── Monthly Climatology.sql
 │   └── YOY Change.sql
 ├── .gitignore
-└── CASE_STUDY.md
+├── CASE_STUDY.md
 ├── LICENSE
 └── README.md
 ```
