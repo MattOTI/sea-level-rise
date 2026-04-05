@@ -42,6 +42,7 @@ sea-level-rise/
 │   └── sea_level_analysis.ipynb
 ├── .gitignore
 └── README.md
+└── LICENSE.md
 ```
 
 ## Further Work
