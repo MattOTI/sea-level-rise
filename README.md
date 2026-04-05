@@ -56,4 +56,5 @@ sea-level-rise/
 This project is licensed under the MIT Licence.
 
 Data preparation carried out in part at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA (80NM0018D0004).
+
 NASA-SSH. 2025. SSH Global Mean Sea Level from Simple Gridded Sea Surface Height. PO.DAAC, CA, USA. Dataset accessed [2026-03-22] at https://doi.org/10.5067/NSIND-GMSV1
