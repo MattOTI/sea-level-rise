@@ -36,11 +36,11 @@ sea-level-rise/
 │   ├── gmsl_historical.png
 │   ├── gmsl_ipcc_comparison.png
 │   ├── gmsl_projection.png
-│   ├── residual_comparison.png
-│   └── rolling_rate.png
+│   └── residual_comparison.png
 ├── notebooks/
 │   └── sea_level_analysis.ipynb
 ├── .gitignore
+└── CASE_STUDY.md
 └── README.md
 └── LICENSE.md
 ```
