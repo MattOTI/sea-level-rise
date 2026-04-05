@@ -49,9 +49,14 @@ sea-level-rise/
 │   └── rolling_rate.png
 ├── notebooks/
 │   └── sea_level_analysis.ipynb
+├── sql/
+│   ├── Annual Means.sql
+│   ├── Decadal Means.sql
+│   ├── Monthly Climatology.sql
+│   └── YOY Change.sql
 ├── .gitignore
+├── LICENSE
 └── README.md
-└── LICENSE.md
 ```
 
 ## Further Work
