@@ -14,6 +14,15 @@ Pandas, NumPy, SciPy and Statsmodels utilised for data manipulation and statisti
 
 ![GMSL Projection](images/gmsl_ipcc_comparison.png)
 
+## SQL Queries
+
+Four queries are included in the `sql/` folder for use in a BigQuery environment, using the `gmsl_observations` table derived from the raw NASA-SSH dataset.
+
+- **Annual Means**: Average GMSL per calendar year, providing a cleaner long-term trend than the raw weekly observations
+- **Decadal Means**: Mean, min, and max GMSL grouped by decade, quantifying acceleration across the satellite record
+- **Monthly Climatology**: Average GMSL by calendar month across all years, highlighting the seasonal cycle
+- **YOY Change**: Year-on-year difference in mean GMSL, showcasing periods of faster or slower rise
+
 ## Key Findings
 
 The long-term rate of sea level rise is **3.236 mm/year** (GLSAR(52) corrected), with R² = 0.96 confirming a statistically significant upward trend across the full 33-year record.
