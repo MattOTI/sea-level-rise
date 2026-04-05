@@ -6,13 +6,22 @@ Analysis of the NASA-SSH Global Mean Sea Level (GMSL) indicator dataset, derived
 
 ## How It's Made
 
-**Tech Used:** Python, VS Code, Jupyter Notebooks
+**Tech Used:** Python, VS Code, SQL, Jupyter Notebooks
 
 Analysis involved initial inspection, data parsing and cleaning of a NASA ASCII time series, conversion of decimal year formatting to datetime objects, and seasonal amplitude analysis. OLS linear regression was applied to establish the long-term rate of rise, with autocorrelation diagnosed via the Durbin-Watson statistic and ACF plot, and corrected using Generalised Least Squares (GLSAR(52)). A quadratic model was fitted to capture observed acceleration, with uncertainty quantified via 52-week block bootstrap. Projections were contextualised against IPCC AR6 likely ranges for 2050 and 2100.
 
 Pandas, NumPy, SciPy and Statsmodels utilised for data manipulation and statistical modelling. Matplotlib used for all visualisations.
 
 ![GMSL Projection](images/gmsl_ipcc_comparison.png)
+
+## SQL Queries
+
+Four queries are included in the `sql/` folder for use in a BigQuery environment, using the `gmsl_observations` table derived from the raw NASA-SSH dataset.
+
+- **Annual Means**: Average GMSL per calendar year, providing a cleaner long-term trend than the raw weekly observations
+- **Decadal Means**: Mean, min, and max GMSL grouped by decade, quantifying acceleration across the satellite record
+- **Monthly Climatology**: Average GMSL by calendar month across all years, highlighting the seasonal cycle
+- **YOY Change**: Year-on-year difference in mean GMSL, showcasing periods of faster or slower rise
 
 ## Key Findings
 
@@ -39,10 +48,15 @@ sea-level-rise/
 │   └── residual_comparison.png
 ├── notebooks/
 │   └── sea_level_analysis.ipynb
+├── sql/
+│   ├── Annual Means.sql
+│   ├── Decadal Means.sql
+│   ├── Monthly Climatology.sql
+│   └── YOY Change.sql
 ├── .gitignore
 └── CASE_STUDY.md
+├── LICENSE
 └── README.md
-└── LICENSE.md
 ```
 
 ## Further Work
